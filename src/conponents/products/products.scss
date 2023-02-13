@@ -1,0 +1,51 @@
+.gallary {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	margin: 2rem 0rem;
+	flex-wrap: wrap;
+
+	.card {
+		border: #7ad9 3px solid;
+		padding: 1rem;
+
+		.img {
+			border: gray solid 1px;
+			margin: auto;
+			background-color: #338d5c;
+			overflow: hidden;
+		}
+		.dis {
+			margin: 1rem 0rem;
+			padding: 0.5rem;
+			.flex {
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: space-between;
+				gap: 3rem;
+				margin-top: 1rem;
+
+				span {
+					// border: purple solid 1px;
+					font-size: calc(10px + 2vh);
+				}
+			}
+		}
+	}
+}
+
+.heart {
+	cursor: pointer;
+	&:hover {
+		color: #338d5c;
+	}
+}
+
+.delete {
+	&:hover {
+		color: red;
+	}
+}
